@@ -4,7 +4,8 @@ import shutil
 def safe_copy(source, target):
   with open(target, 'r') as f:
     first_line = f.readline()
-  if first_line.strip() != "// Placeholder.":
+  if (first_line.strip() != "// Placeholder." and
+      first_line.strip() != "# Placeholder."):
     raise RuntimeError("Would overwrite a non-placeholder file.")
   shutil.copy(source, target)
 
