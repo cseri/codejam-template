@@ -1,4 +1,4 @@
-Codeforces template for cseri
+CodeJam template for cseri
 ===
 
-Simple template for [Codeforces](http://codeforces.com) contests.
+Simple template for [CodeJam](https://code.google.com/codejam) contests.
