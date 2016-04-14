@@ -12,6 +12,7 @@ def safe_copy(source, target):
 taskList = ["TaskB", "TaskC", "TaskD", "TaskE"]
 
 for task in taskList:
-  safe_copy("TaskA/local.h", task+"/local.h")
+  safe_copy("TaskA/stdafx.h", task+"/stdafx.h")
   safe_copy("TaskA/TaskA.cpp", task+"/"+task+".cpp")
+  safe_copy("TaskA/compress.py", task+"/compress.py")
 
